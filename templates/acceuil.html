@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static%}
+<head>
+
+</head>
+<body>
+{% for e in Appareil%}
+<h5> Avion ID : {{e.avionid}}</h5>
+<h5> Marque : {{e.marque}}</h5>
+<h5> Model : {{e.model}}</h5>
+<h5> Date Fabrication: {{e.datefabric}}</h5>
+<h5> Date Mise en service: {{e.datemisens}}</h5>
+{% endfor %}
+</body>
+</html>

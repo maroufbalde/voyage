@@ -1,0 +1,16 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UFT-8">
+    <title>formulaire avion</title>
+</header>
+<body>
+    <h1>Formulare Page</h1>
+    <form method="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit">soumettre</button>
+    </form>
+</body>
+</html>
